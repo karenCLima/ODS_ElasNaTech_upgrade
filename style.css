@@ -1,0 +1,290 @@
+@-webkit-keyframes text-shadow-pop-right {
+    0% {
+      text-shadow: 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555;
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      text-shadow: 1px 0 #555555, 2px 0 #555555, 3px 0 #555555, 4px 0 #555555, 5px 0 #555555, 6px 0 #555555, 7px 0 #555555, 8px 0 #555555;
+      -webkit-transform: translateX(-8px);
+              transform: translateX(-8px);
+    }
+  }
+@keyframes text-shadow-pop-right {
+    0% {
+      text-shadow: 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555;
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      text-shadow: 1px 0 #555555, 2px 0 #555555, 3px 0 #555555, 4px 0 #555555, 5px 0 #555555, 6px 0 #555555, 7px 0 #555555, 8px 0 #555555;
+      -webkit-transform: translateX(-5px);
+              transform: translateX(-5px);
+    }
+  }
+  
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body h1,ol{
+    margin: 10px 10px;
+}
+
+#Menu{
+  background-color: #86BEDA;
+  height: 75px;
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+}
+
+.logo_menu{
+  height: 75px;
+  margin-left: 2%;
+}
+
+#Menu .lista_menu{
+  background-color: #86BEDA;
+  list-style: none;
+  float: right;
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+  margin-right: 20px;
+}
+
+.lista_menu li{
+  float:left;
+  padding: 22px 25px 23px 25px;
+  text-align: center;
+}
+
+.lista_menu li a{
+  text-decoration: none;
+  color: black;
+  background-color: transparent;
+  margin: 0;
+  
+}
+
+.lista_menu li:hover{
+  background-color: white;
+}
+
+.poster{
+    background-image: url('./imgs/header_imagem.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 930px;
+    margin: 0;
+}
+
+
+.poster h1{
+    font-size: 90px;
+    color: white;
+    text-align: center;
+    background-color: transparent;
+    margin-bottom: 20px;
+    text-shadow: 1px 5px 1px rgba(10, 10, 10, 0.7);
+    position: absolute;
+    top: 60%;
+    left:23%;
+}
+
+.poster .logo{
+    display: block;
+    margin: 0 auto;
+    height: 20%;
+    width: auto;
+    position: absolute;
+    top: 40%;
+    left: 47%;
+}
+
+.parte_do_meio{
+    display: grid;
+    grid-template-columns:  1fr 1fr;
+    grid-auto-flow: row;
+    margin: 20px 20px;
+}
+
+@media (max-width: 1300px) {
+  /* Quando a tela tem no máximo 600px de largura */
+  .parte_do_meio {
+    grid-template-columns: 1fr; /* Uma coluna */
+    margin: 20px 20px 20px 30px;
+    text-align: justify;
+    max-width: 90%;
+    font-family: 'Montserrat', sans-serif;
+  }
+}
+
+.parte_do_meio .parte_texto{
+    font-size: 18px;
+    text-align: justify;
+    max-width: 90%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.parte_do_meio .parte_lista{
+    list-style-type: decimal;
+    font-size: 18px;
+    text-align: justify;
+    max-width: 95%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.background-agua {
+    background-image: url('./imgs/background-agua.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px;
+    background-attachment: fixed;
+  }
+
+.descricao-titulo{
+    background-color: transparent;
+    color: darkgray;
+    text-align: center;
+    margin-bottom: 2px;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    text-shadow: 1px 3px 1px rgba(10, 10, 10, 0.7);
+  }
+
+
+.background-agua .plansab{
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+}
+
+.background-agua .plansab ul{
+    margin: 20px 50px;
+    list-style: none;
+    display: grid;
+    max-width: 1000px;
+    grid-template-columns: repeat(3, 350px);
+    grid-gap: 50px;
+    padding: 10px;
+}
+
+@media (max-width: 1300px) {
+  /* Quando a tela tem no máximo 600px de largura */
+  .background-agua .plansab ul {
+    grid-template-columns: 1fr; /* Uma coluna */
+    margin: 20px 20px 20px 30px;
+    width: 40%;
+    height: auto;
+  }
+}
+
+.background-agua .plansab li{
+    border: 0.825rem solid black;
+    margin-top: 20px;
+    padding: 10px 0px 0px 5px;
+    border: 1px solid #ccc;
+    max-width: 50rem;
+    height: 15rem ;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+    justify-content: flex-end;
+    gap: 10px;
+    background-color: white;
+    border-radius: 1rem;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
+    transition: transform 0.3s, box-shadow 0.3s;/* Adiciona transições suaves */
+}
+
+.background-agua .plansab li:hover{
+    transform: scale(1.2); /* Aumenta o tamanho do elemento em 20% */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);/* Adiciona uma sombra suave */
+}
+
+.background-agua .plansab li .descricao{
+    font-size: 0.825rem;
+    max-width: 100%;
+    font-size: 25px;
+    text-align: right;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+
+.background-agua .plansab ul li .text-shadow-pop-right{
+    text-shadow: 1px 5px 1px rgba(10, 10, 10, 0.7);
+    font-size: 100px;
+    color: #ccc;
+    text-align: right;
+    
+}
+.background-agua .plansab ul li .text-shadow-pop-right:hover{
+    -webkit-animation: text-shadow-pop-right 0.5s  both;
+	    animation: text-shadow-pop-right 1s both;
+}
+
+.final{
+    display: grid;
+    grid-template-columns:  1fr 1fr;
+}
+
+@media (max-width: 1300px) {
+  /* Quando a tela tem no máximo 1300px de largura */
+  .final {
+    grid-template-columns: 1fr; /* Uma coluna */
+    margin: 30px 30px 30px 10px; 
+    text-align: justify;
+    max-width: 90%;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+  }
+}
+
+.final iframe{
+    height: 500px;
+    width: 100%;
+    padding: 20px;
+}
+
+.final .parte_final{
+    font-size: 18px;
+    text-align: justify;
+    font-family: 'Montserrat', sans-serif;
+    margin: 30px 30px 0px 0px; 
+    padding-left: 30px;
+}
+
+.footer {
+    margin-top: 30px;
+    
+    background-color:#86BEDA ;
+    height: 200px;
+    padding-top: 20px;
+}
+
+.footer p,a{
+    background-color: #86BEDA ; 
+    margin-left: 20px;
+    text-align: left;
+}
+
+.subtitulos{
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 40px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.sub_f{
+  text-align: left;
+  color: white;
+  margin-left: 20px;
+}
